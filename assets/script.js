@@ -1,0 +1,1 @@
+varAPIKey = "b2050e87b6e297995821a5383db9b1ec"

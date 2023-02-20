@@ -1,0 +1,41 @@
+html{
+  background-image:url(https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2xpZ2h0bmluZy01LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6IjEyMDAifX19) ;
+}
+
+
+
+
+.navbar {
+  background-color: black !important;
+}
+
+#weather {
+  border: 2px solid black;
+}
+#date {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+.custom-width {
+  width: 325px;
+  
+}
+
+#expand {
+  width: 1000px;
+}
+
+.city{
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.671);
+}
+
+.fa-brands  {
+  color: whitesmoke;
+  
+}
+#title {
+  color:whitesmoke;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+}
