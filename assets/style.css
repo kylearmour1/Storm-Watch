@@ -1,3 +1,5 @@
+
+
 html{
   background-image:url(https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2xpZ2h0bmluZy01LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6IjEyMDAifX19) ;
 }
@@ -6,11 +8,13 @@ html{
 
 
 .navbar {
-  background-color: black !important;
+  background-color:rgb(0, 0, 0) !important;
 }
 
 #weather {
-  border: 2px solid black;
+  border: 2px solid whitesmoke;
+  font-size: 30px;
+  max-width: 100%;
 }
 #date {
   background-color: rgba(0, 0, 255, 0.5);
@@ -21,12 +25,12 @@ html{
 }
 
 #expand {
-  width: 1000px;
+  max-width: 100%;
 }
 
 .city{
   color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.671);
+  background-color: black;
 }
 
 .fa-brands  {
@@ -35,7 +39,36 @@ html{
 }
 #title {
   color:whitesmoke;
-  font-size: 50px;
+  font-size: 25px;
   align-items: center;
   justify-content: center;
 }
+
+/* .column.is-bordered {
+  border: 2px solid whitesmoke;
+  
+} */
+
+.city-item {
+  border: 2px solid whitesmoke;
+  padding: 0.5em;
+  display: inline-block;
+}
+#finish {
+  border: 2px solid whitesmoke;
+  background-color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .field.is-grouped input.input {
+    width: 100%;
+  }
+
+  .buttons .button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+
