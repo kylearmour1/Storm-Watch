@@ -20,8 +20,6 @@ const formattedDate = date.toLocaleDateString('en-US', dateOptions);
 const windSpeedMPH = data.list[0].wind.speed * 2.237;
 const humidity = data.list[0].main.humidity;
 
-
-
 document.getElementById("current-day").innerHTML = " " 
      + data.city.name 
      +"\n"
