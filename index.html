@@ -19,7 +19,7 @@
       <div id="title">Storm Watch</div>
      
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+    <a  aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -31,15 +31,18 @@
  <div class="column is-one-third is-full">
     <div class="field is-grouped">
       <p class="control ">
-        <input class="input" type="text" placeholder="">
+        <input id="cityInput" class="input" type="text"  placeholder="">
       </p>
       <p class="control">
-        <a class="button is-info">
+        <a class="button is-info" id="searchButton">
+          
           Search
         </a>
       </p>
     </div>
   </div>
+
+  
   <div class="column is-full">
     <div class="buttons">
 <div class="column is-one-third is-full">
@@ -56,73 +59,71 @@
 </div>
 </div>
 </section>
-<section id="expand">
-<section class="column">
+</div>
+</div>
+</div>
 <div class="column is-two-thirds">
-  <section id="white-border">
-    <div id="weather">
-    <div class="city">Seattle: (12/09/1994)</div>
-    <div class="city">Temp: 33.33&#8457 </div>
-    <div class="city">Wind: 3.95 MPH</div>
-    <div class="city">Humidity 30%:</div>
+<div class="columns">
+ 
   </div>
-  </section>
-<br>
-  <div class="columns">
-    
-    <div class="column is-bordered">
-          <div id="finish">
-            <div class="city"> 12/10/1994</div>
-            <i class="fa-brands fa-cloudflare"></i>
-            <div class="city">Temp: 30.33&#8457 </div>
-            <div class="city">Wind: 3.19 MPH</div>
-            <div class="city">humidity: 22%</div>
-        </div>
-      </div>
-        <div class="column is-bordered">
-          <div id="finish">
-        <div class="city">12/10/1994</div>
-        <i class="fa-brands fa-cloudflare"></i>
-        <div class="city">Temp: 30.33&#8457 </div>
-        <div class="city">Wind: 3.19 MPH</div>
-        <div class="city">humidity: 22%</div>
-    </div>
-    </div>
-    <div class="column is-bordered">
-      <div id="finish">
-            <div class="city"> 12/10/1994</div> 
-            <i class="fa-brands fa-cloudflare"></i>
-            <div class="city">Temp: 30.33&#8457</div>
-            <div class="city">Wind: 3.19 MPH</div>
-            <div class="city">humidity: 22%</div>
-            </div>
-</div>
-<div class="column is-bordered">
-  <div id="finish">
-  <div class="city">12/10/1994</div>
-  <i class="fa-brands fa-cloudflare"></i>
-  <div class="city">Temp: 30.33&#8457</div>
-  <div class="city">Wind: 3.19 MPH</div>
-  <div class="city">humidity: 22%</div>
-</div>
-</div>
-<div class="column is-bordered">
-  <div id="finish">
-<div class="city">12/10/1994</div>
-<i class="fa-brands fa-cloudflare"></i>
-<div class="city">Temp: 30.33&#8457</div>
-<div class="city">Wind: 3.19 MPH</div>
-<div class="city">humidity: 22%</div>
-</div>
-</div>
 
-
-</div>
   
-    </div>
-  </div>
-</section>
-</section>
-</section>
+  <div class="column is-two-thirds" >
+    <section class="stacking">
+      <div class="container">
+        <div class="box is-full" id="current-day">
+     
+        </div>
+
+
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <div id="day-1"></div>
+              <div>
+           
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              
+              <div id="day-2"></div>
+              <div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <div id="day-3"></div>
+              <div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <div id="day-4"></div>
+              <div>
+                
+              <!-- </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <div id="day-5"></div>
+              <div>
+                <ul class="list-unstyled"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+         -->
+
+
+ 
+
+ <script src="Assets/script.js"></script>
 </body>
 </html>

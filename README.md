@@ -101,3 +101,54 @@ You are required to submit BOTH of the following for review:
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
+var city = document.getElementById("cityInput").value;
+var APIKey = "ce2eaa6886e0920747a7ce7a941aa475";
+
+var searchButton = document.getElementById("searchButton");
+console.log(searchButton);
+document.getElementById("searchButton").addEventListener("click", function() {
+  
+  fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}`)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+   
+    
+    
+
+    
+  })
+  .catch(error => {
+    console.error(error);
+  });
+});
+
+
+
+
+
+
+
+
+var city = document.getElementById("cityInput").value;
+var APIKey = "ce2eaa6886e0920747a7ce7a941aa475";
+
+var searchButton = document.getElementById("searchButton");
+console.log(searchButton);
+document.getElementById("searchButton").addEventListener("click", function() {
+  
+  fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}`)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    
+ 
+    
+
+    
+  })
+  .catch(error => {
+    console.error(error);
+  });
+});
+

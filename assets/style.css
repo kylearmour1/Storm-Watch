@@ -1,15 +1,23 @@
 
 
-html{
-  background-image:url(https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2xpZ2h0bmluZy01LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6IjEyMDAifX19) ;
+
+
+
+
+
+
+html {
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.795)) !important;
 }
 
 
 
 
 .navbar {
-  background-color:rgb(0, 0, 0) !important;
+  background-color:rgba(0, 128, 0, 0.137) !important;
 }
+
+
 
 #weather {
   border: 2px solid whitesmoke;
@@ -59,6 +67,11 @@ html{
   background-color: black;
 }
 
+#top-section {
+
+}
+
+
 @media screen and (max-width: 767px) {
   .field.is-grouped input.input {
     width: 100%;
@@ -69,6 +82,3 @@ html{
     margin-bottom: 10px;
   }
 }
-
-@media (max-width: 767px) {
-
