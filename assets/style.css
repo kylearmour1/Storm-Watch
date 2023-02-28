@@ -11,10 +11,26 @@ html {
 }
 
 
+#current-day, #day-1, #day-2, #day-3, #day-4, #day-5 {
+  align-items: center;
+   width: 400px;
+   height: 145px;
+   color: black;
+   font-weight: bold;
+ }
+.box {
+  background-image:URL(https://thumbs.dreamstime.com/b/flash-lightning-dark-background-thunderstorm-210934660.jpg) ;
+ align-items: center;
+  width: 145px;
+  height: 170px;
+  
+}
+
+
 
 
 .navbar {
-  background-color: rgba(70, 119, 70, 0.719) !important;
+  background-color: rgba(5, 5, 170, 0.774) !important;
 }
 
 
@@ -80,5 +96,18 @@ html {
   .buttons .button {
     width: 100%;
     margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .box {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #current-day {
+    width: 100%;
+    padding: 10px;
   }
 }
