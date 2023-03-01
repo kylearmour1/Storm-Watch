@@ -33,7 +33,7 @@ function getWeatherData(city) {
     
 
 
-     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`)
+     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`)
      .then(response => response.json())
      .then(data => {
         console.log(data);
