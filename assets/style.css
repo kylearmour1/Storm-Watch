@@ -68,10 +68,6 @@ html {
   justify-content: center;
 }
 
-/* .column.is-bordered {
-  border: 2px solid whitesmoke;
-  
-} */
 
 .city-item {
   border: 2px solid whitesmoke;
@@ -83,9 +79,7 @@ html {
   background-color: black;
 }
 
-#top-section {
 
-}
 
 
 @media screen and (max-width: 767px) {
