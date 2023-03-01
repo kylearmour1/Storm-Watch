@@ -1,6 +1,6 @@
 
 
-var city = document.getElementById("cityInput").value;
+
 var APIKey = "e7a29c6f4a5754e864692a14224adc4e";
 var searchButton = document.getElementById("searchButton");
 console.log(searchButton);
@@ -47,7 +47,7 @@ function getWeatherData(city) {
              const windSpeedMPH = data.wind.speed * 2.237;
              const humidity = data.main.humidity;
    
-             document.getElementById("current-day").innerHTML += " " 
+             document.getElementById("current-day").innerHTML = " " 
                
              + data.name
              + "\n"
@@ -152,6 +152,9 @@ document.getElementById("bend-button").addEventListener("click", function() {
 
 
 document.getElementById("searchButton").addEventListener("click", function() {
+     var city = document.getElementById("cityInput").value;
+     
+    
      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`)
 .then(response => response.json())
 .then(data => {
@@ -166,7 +169,7 @@ document.getElementById("searchButton").addEventListener("click", function() {
         const windSpeedMPH = data.wind.speed * 2.237;
         const humidity = data.main.humidity;
 
-        document.getElementById("current-day").innerHTML += " " 
+        document.getElementById("current-day").innerHTML = " " 
           
         + data.name
         + "\n"
@@ -236,7 +239,5 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey
 
 
    });
-
-
 
 
