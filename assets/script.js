@@ -1,6 +1,6 @@
 
 
-
+var city = document.getElementById("cityInput").value;
 var APIKey = "e7a29c6f4a5754e864692a14224adc4e";
 var searchButton = document.getElementById("searchButton");
 console.log(searchButton);
@@ -165,7 +165,7 @@ document.getElementById("searchButton").addEventListener("click", function() {
         const temperature = (data.main.temp - 273.15) * 9/5 + 32;
         const tempF = temperature.toFixed(2);
         const dateOptions = { year: 'numeric', month: '2-digit', day: '2-digit' };
-        const formattedDate = date.toLocaleDateString('en-US', dateOptions);
+        const formattedDate = new Date(data.dt * 1000).toLocaleDateString('en-US', dateOptions);
         const windSpeedMPH = data.wind.speed * 2.237;
         const humidity = data.main.humidity;
 
@@ -239,5 +239,13 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey
 
 
    });
+
+const cities = JSON.parse(localStorage.getItem("cities")) || [];
+const cityList = document.getElementById("city-list");
+cities.forEach((city) => {
+  const listItem = document.createElement("li");
+  listItem.textContent = city;
+  cityList.appendChild(listItem);
+});
 
 
