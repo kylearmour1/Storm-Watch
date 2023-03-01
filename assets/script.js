@@ -165,7 +165,7 @@ document.getElementById("searchButton").addEventListener("click", function() {
         const temperature = (data.main.temp - 273.15) * 9/5 + 32;
         const tempF = temperature.toFixed(2);
         const dateOptions = { year: 'numeric', month: '2-digit', day: '2-digit' };
-        const formattedDate = new Date(data.dt * 1000).toLocaleDateString('en-US', dateOptions);
+        const formattedDate = date.toLocaleDateString('en-US', dateOptions);
         const windSpeedMPH = data.wind.speed * 2.237;
         const humidity = data.main.humidity;
 
