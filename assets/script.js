@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
 
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`
       )
         .then((response) => response.json())
         .then((data) => {
