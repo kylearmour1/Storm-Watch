@@ -25,9 +25,13 @@ html {
   height: 170px;
   
 }
+#cityList {
+  width: 50px;
+}
 
-
-
+#search-bar {
+  width:350px;
+}
 
 .navbar {
   background-color:rgb(83, 2, 2) !important;
@@ -105,3 +109,11 @@ html {
     padding: 10px;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  #search-bar {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
