@@ -82,7 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
           const temperature =
             ((data.list[forecast.index].main.temp - 273.15) * 9) / 5 + 32;
           const tempF = temperature.toFixed(2);
-          const date = new Date(data.list[forecast.index].dt_txt);
+          const date = new Date(data.list[forecast.index].dt_txt).toLocaleDateString(
+            "en-US",
+            dateOptions
+          );
           const dateOptions = {
             year: "numeric",
             month: "2-digit",
