@@ -1,43 +1,36 @@
-
-
-
-
-
-
-
-
 html {
   background-image: linear-gradient(black, rgba(0, 0, 0, 0.795)) !important;
 }
 
-
-#current-day, #day-1, #day-2, #day-3, #day-4, #day-5 {
+#current-day,
+#day-1,
+#day-2,
+#day-3,
+#day-4,
+#day-5 {
   align-items: center;
-   width: 400px;
-   height: 145px;
-   color:whitesmoke;
-   font-weight: bold;
- }
+  width: 400px;
+  height: 145px;
+  color: whitesmoke;
+  font-weight: bold;
+}
 .box {
-  background-image:URL(https://c4.wallpaperflare.com/wallpaper/268/578/436/severe-thunderstorm-at-night-wallpaper-preview.jpg) ;
- align-items: center;
+  background-image: URL(https://c4.wallpaperflare.com/wallpaper/268/578/436/severe-thunderstorm-at-night-wallpaper-preview.jpg);
+  align-items: center;
   width: 160px;
   height: 170px;
-  
 }
 #cityList {
   width: 50px;
 }
 
 #search-bar {
-  width:350px;
+  width: 350px;
 }
 
 .navbar {
-  background-color:rgb(83, 2, 2) !important;
+  background-color: rgb(83, 2, 2) !important;
 }
-
-
 
 #weather {
   border: 2px solid whitesmoke;
@@ -49,29 +42,26 @@ html {
 }
 .custom-width {
   width: 325px;
-  
 }
 
 #expand {
   max-width: 100%;
 }
 
-.city{
+.city {
   color: whitesmoke;
   background-color: black;
 }
 
-.fa-brands  {
+.fa-brands {
   color: whitesmoke;
-  
 }
 #title {
-  color:whitesmoke;
+  color: whitesmoke;
   font-size: 25px;
   align-items: center;
   justify-content: center;
 }
-
 
 .city-item {
   border: 2px solid whitesmoke;
@@ -82,9 +72,6 @@ html {
   border: 2px solid whitesmoke;
   background-color: black;
 }
-
-
-
 
 @media screen and (max-width: 767px) {
   .field.is-grouped input.input {
@@ -116,4 +103,3 @@ html {
     padding: 10px;
   }
 }
-

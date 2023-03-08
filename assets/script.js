@@ -156,18 +156,25 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("bend-button").addEventListener("click", function () {
     getWeatherData("Bend");
   });
+  document
+    .getElementById("cityInput")
+    .addEventListener("keydown", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("searchButton").click();
+      }
+    });
 
   document
     .getElementById("searchButton")
     .addEventListener("click", function () {
       var city = document.getElementById("cityInput").value;
       if (city.length === 0) {
-          alert("please enter a valid city.");
-          return;
+        alert("please enter a valid city.");
+        return;
       }
 
       localStorage.setItem("searchedCity", city);
-      
 
       let searchHistory =
         JSON.parse(localStorage.getItem("searchHistory")) || [];
@@ -278,10 +285,9 @@ document.addEventListener("DOMContentLoaded", function () {
       cityList.add(option);
     });
   };
-  
-document.getElementById('cityList').addEventListener("change", function(){
-     var selectedCity = this.value;
-     getWeatherData(selectedCity);
-})
 
+  document.getElementById("cityList").addEventListener("change", function () {
+    var selectedCity = this.value;
+    getWeatherData(selectedCity);
+  });
 });
